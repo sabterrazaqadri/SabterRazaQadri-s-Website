@@ -1,5 +1,9 @@
-// components/SocialMediaIcons.js
-import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import dynamic from 'next/dynamic';
+const FaFacebook = dynamic(() => import('react-icons/fa').then(mod => mod.FaFacebook), { ssr: false });
+const FaYoutube = dynamic(() => import('react-icons/fa').then(mod => mod.FaYoutube), { ssr: false });
+const FaInstagram = dynamic(() => import('react-icons/fa').then(mod => mod.FaInstagram), { ssr: false });
+const FaLinkedin = dynamic(() => import('react-icons/fa').then(mod => mod.FaLinkedin), { ssr: false });
+
 import styles from './SocialMediaIcons.module.css';
 
 export default function SocialMediaIcons() {
