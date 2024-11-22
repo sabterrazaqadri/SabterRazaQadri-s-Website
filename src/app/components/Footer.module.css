@@ -1,0 +1,71 @@
+/* components/Footer.module.css */
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.links, .socialMedia {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.link, .socialLink {
+  color: #61dafb;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover, .socialLink:hover {
+  color: #21a1f1;
+}
+
+.copy {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      padding: 0 15px;
+  }
+
+  .link, .socialLink {
+      margin: 0 10px; /* Reduce spacing for smaller screens */
+  }
+
+  .copy {
+      font-size: 0.8em; /* Smaller text size for narrow screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 15px 0; /* Reduce padding for very small screens */
+  }
+
+  .links, .socialMedia {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center;
+  }
+
+  .link, .socialLink {
+      margin: 5px 0; /* Vertical spacing */
+  }
+
+  .copy {
+      font-size: 0.75em; /* Further reduce text size */
+  }
+}

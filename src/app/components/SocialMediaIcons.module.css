@@ -1,0 +1,44 @@
+/* components/SocialMediaIcons.module.css */
+.iconsContainer {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+    padding-top: 10px;
+    padding-left: 45px;
+    justify-content: flex-start; /* Align icons to the left by default */
+}
+
+.icon {
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+    transition: color 0.3s;
+    cursor: pointer; /* Indicate interactivity */
+}
+
+.icon:hover {
+    color: #0070f3; /* Color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .iconsContainer {
+        justify-content: center; /* Center icons for smaller screens */
+        padding-left: 20px; /* Adjust padding */
+    }
+
+    .icon {
+        font-size: 20px; /* Slightly smaller icons */
+    }
+}
+
+@media (max-width: 480px) {
+    .iconsContainer {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center align */
+        gap: 10px; /* Reduce spacing */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .icon {
+        font-size: 18px; /* Smaller icons for very small screens */
+    }
+}

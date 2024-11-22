@@ -1,0 +1,167 @@
+/* Responsive Heading Section */
+.heading {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Subheading (h6) Style */
+.srq h6 {
+    color: #354e33;
+    background-color: #E8E8E8;
+    border-radius: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px;    
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+/* Main Heading (h1) Style */
+.heading h1 {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #354e33;
+    margin-bottom: 20px;
+}
+
+.heading h1 span {
+    color: #798d7a;
+}
+
+/* Box Layout */
+.boxes {
+    display: flex;
+    gap: 40px; /* Adjusted for better spacing */
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    margin: 20px 0;
+}
+
+/* Box Text Styles */
+.boxes h4 {
+    color: white;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 80px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    position: absolute;
+}
+
+.boxes p {
+    color: white;
+    width: 300px; /* Reduced for better scaling */
+    font-size: 16px; /* Adjusted for responsiveness */
+    padding-left: 30px;
+    padding-top: 30px;
+    font-family: Times, serif;
+    position: absolute;
+    z-index: 1;
+    margin-top: 120px;
+}
+
+/* Box Styles */
+.box1, .box2, .box3 {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box1 {
+    background-color: #798d7a;
+}
+
+.box2 {
+    background-color: #E8E8E8;
+}
+
+.box2 h4, .box2 p {
+    color: #354e33;
+}
+
+.box3 {
+    background-color: #798d7a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+
+    .srq h6 {
+        font-size: 16px;
+    }
+
+    .boxes {
+        gap: 20px;
+    }
+
+    .boxes h4 {
+        font-size: 24px;
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+
+    .boxes p {
+        width: 250px;
+        font-size: 14px;
+        margin-top: 100px;
+    }
+
+    .box1, .box2, .box3 {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .srq h6 {
+        font-size: 14px;
+    }
+
+    .boxes {
+        flex-direction: column; /* Stack boxes vertically */
+        gap: 15px;
+        padding-left: 20vw
+    }
+
+    .boxes h4 {
+        font-size: 20px;
+        padding-top: 40px;
+        text-align: center;
+        width: 100%;
+        padding-right: 20px;
+        text-decoration: underline;
+    }
+
+    .boxes p {
+        font-size: 14px;
+        width: 220px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .box1, .box2, .box3 {
+        width: 250px;
+        height: 250px;
+        padding-right: 60vw;
+        padding-bottom: 250px;
+    }
+}

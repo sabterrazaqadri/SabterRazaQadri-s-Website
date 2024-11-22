@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,6 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        'greenish' : '354e33',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
