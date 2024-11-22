@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Biography from "./components/Biography";
 import Media from './components/Media';
 import Herosection from './components/Herosection';

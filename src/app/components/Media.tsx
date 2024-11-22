@@ -5,7 +5,6 @@ import srq4 from "./srq4.jpg";
 import srq5 from "./srq5.jpg";
 import srq6 from "./srq6.jpg";
 import Link from 'next/link';
-import studio from '../studio/page';
 
 export default function Media() {
     return (

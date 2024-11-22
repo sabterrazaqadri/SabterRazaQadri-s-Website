@@ -12,7 +12,7 @@ export default function Biography() {
       <div className="BlueBioPage" style={{position : "relative"} }>
             <Image className={styles.bboximg} src={srq2} alt='image' width={1000} height={800}/>
             <div className={styles.bbox}></div>
-            <div className={styles.bbox2}> <h1>Biography</h1><p>Read More About <b>Sabter Raza Qadri's</b> Personal Life,<br /> His Early Age, 
+            <div className={styles.bbox2}> <h1>Biography</h1><p>Read More About <b>Sabter Raza Qadri&apos;s</b> Personal Life,<br /> His Early Age, 
             Education, Profession <br /> & Much More.</p> <Link href={"/#bio"}><h6>Read Biography →</h6></Link></div>
       </div>
       
@@ -45,7 +45,7 @@ export default function Biography() {
           12.
           <br/>
           <br/>
-          <b>Bai'at :</b> <br />
+          <b>Bai&apos;at :</b> <br />
           In 2010 He Gave His Hand In Hands Of Huzoor Tajushariyah Mufti Akhtar
           Raza Khan , Also he is Taalib From Huzoor Peer Syed Daulat Hussain
           Shah Sahab and Maulana Ilyas Qadri
